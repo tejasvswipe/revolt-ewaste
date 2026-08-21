@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "pnpm install --frozen-lockfile && pnpm build",
+  "buildCommand": "npm install --frozen-lockfile && npm run build",
   "outputDirectory": "dist/public",
   "rewrites": [
     {

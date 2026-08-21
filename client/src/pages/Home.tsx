@@ -7,10 +7,9 @@ import { ArrowDownRight, ArrowRight, Check, ChevronDown, CircleDot, FileText, Me
 import { toast } from "sonner";
 import { Link } from "wouter";
 
-const heroVisual = "/manus-storage/revolt-hero-device-evidence_efc1d481.png";
-const kioskVisual = "/manus-storage/revolt-kiosk-ad_c15a79f8.png";
-const mark = "/manus-storage/revolt-logo-black-white-transparent_03e12a00.png";
-
+const heroVisual = "/public/assets/revolt-hero-device-evidence.png";
+const kioskVisual = "/public/assets/revolt-kiosk-ad.png";
+const mark = "/public/assets/logo.png";
 const stages = [
   { id: "01", title: "Identify", text: "Serial-level registration begins at intake.", meta: "ASSET ID / QR / METADATA" },
   { id: "02", title: "Custody", text: "Timestamped handoffs keep the chain visible.", meta: "HANDOFF / LOCATION / OWNER" },
@@ -93,7 +92,7 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-5"><CTA onClick={pilot}>Request a pilot</CTA><button onClick={() => scrollTo("workflow")} className="inline-flex items-center gap-2 border-b-2 border-[#18d7c1] pb-2 text-[13px] font-bold uppercase tracking-[.08em] text-[#f3f0e8]">See how it works <ArrowDownRight size={16} className="text-[#18d7c1]" /></button></div>
           <p className="mono mt-12 text-[11px] uppercase tracking-[.1em] text-[#8d938d]">Every retired device should leave proof.</p>
         </div>
-        <div className="relative lg:-mr-20"><div className="absolute -left-3 top-7 z-10 border-2 border-[#101313] bg-[#e8f05a] px-3 py-2 text-[10px] font-bold uppercase text-[#101313] shadow-[5px_5px_0_#18d7c1]">Simulated interface / Demo asset</div><div className="overflow-hidden border-2 border-[#f3f0e8] bg-[#1a201e] shadow-[12px_12px_0_#18d7c1]"><img src={heroVisual} alt="Abstract visual of a device becoming a verified evidence record" className="h-[390px] w-full object-cover opacity-90 lg:h-[500px]" /></div><div className="mt-5 flex items-center justify-between mono text-[10px] uppercase tracking-[.13em] text-[#8d938d]"><span>RV-2026-000184</span><span className="flex items-center gap-2 text-[#18d7c1]"><CircleDot size={11} /> Verified / simulated</span></div></div>
+        <div className="relative lg:-mr-20"><div className="absolute -left-3 top-7 z-10 border-2 border-[#101313] bg-[#e8f05a] px-3 py-2 text-[10px] font-bold uppercase text-[#101313] shadow-[5px_5px_0_#18d7c1]">Simulated interface , Demo asset</div><div className="overflow-hidden border-2 border-[#f3f0e8] bg-[#1a201e] shadow-[12px_12px_0_#18d7c1]"><img src={heroVisual} alt="Abstract visual of a device becoming a verified evidence record" className="h-[390px] w-full object-cover opacity-90 lg:h-[500px]" /></div><div className="mt-5 flex items-center justify-between mono text-[10px] uppercase tracking-[.13em] text-[#8d938d]"><span>RV-2026-000184</span><span className="flex items-center gap-2 text-[#18d7c1]"><CircleDot size={11} /> Verified / simulated</span></div></div>
       </div>
     </section>
 
@@ -115,6 +114,8 @@ export default function Home() {
 
     <EvidenceVault />
 
-    <footer className="bg-[#101313] py-10 text-[#f3f0e8]"><div className="container flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><div className="flex items-center gap-3"><img src={mark} alt="" className="h-8 w-8 object-contain" /><span className="text-lg font-extrabold tracking-[-.06em]">ReVolt<span className="text-[#18d7c1]">.ai</span></span></div><p className="mt-4 max-w-[360px] text-xs leading-relaxed text-[#8d938d]">The evidence layer for e-waste. Secure collection, verified erasure, serialized proof.</p></div><div className="flex flex-col items-start gap-3 md:items-end"><Link href="/contact" className="text-xs font-bold uppercase tracking-[.1em] text-[#18d7c1] hover:underline">Contact us <ArrowRight className="ml-1 inline" size={13} /></Link><div className="mono text-[10px] uppercase tracking-[.12em] text-[#8d938d]">Prototype / Pilot phase / Source-grounded</div></div></div></footer>
+    <footer className="bg-[#101313] py-10 text-[#f3f0e8]"><div className="container flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><div className="flex items-center gap-3"><img src={mark} alt="" className="h-8 w-8 object-contain" /><span className="text-lg font-extrabold tracking-[-.06em]">ReVolt<span className="text-[#18d7c1]">.async function name(params:type) {
+      
+    }</span></span></div><p className="mt-4 max-w-[360px] text-xs leading-relaxed text-[#8d938d]">The evidence layer for e-waste. Secure collection, verified erasure, serialized proof.</p></div><div className="flex flex-col items-start gap-3 md:items-end"><Link href="/contact" className="text-xs font-bold uppercase tracking-[.1em] text-[#18d7c1] hover:underline">Contact us <ArrowRight className="ml-1 inline" size={13} /></Link><div className="mono text-[10px] uppercase tracking-[.12em] text-[#8d938d]">Prototype / Pilot phase / Source-grounded</div></div></div></footer>
   </main>;
 }

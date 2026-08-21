@@ -7,9 +7,9 @@ import { ArrowDownRight, ArrowRight, Check, ChevronDown, CircleDot, FileText, Me
 import { toast } from "sonner";
 import { Link } from "wouter";
 
-const heroVisual = "/public/assets/revolt-hero-device-evidence.png";
-const kioskVisual = "/public/assets/revolt-kiosk-ad.png";
-const mark = "/public/assets/logo.png";
+const heroVisual ="/public/assets/revolt-hero-device-evidence.png";
+const kioskVisual ="/public/assets/revolt-kiosk-ad.png";
+const mark ="/public/assets/logo.png";
 const stages = [
   { id: "01", title: "Identify", text: "Serial-level registration begins at intake.", meta: "ASSET ID / QR / METADATA" },
   { id: "02", title: "Custody", text: "Timestamped handoffs keep the chain visible.", meta: "HANDOFF / LOCATION / OWNER" },

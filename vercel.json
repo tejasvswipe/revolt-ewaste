@@ -4,12 +4,7 @@
   "outputDirectory": "dist/public",
   "rewrites": [
     {
-      "source": "/api/trpc/:path*",
-      "destination": "/api/trpc/:path*"
-
-    },
-    {
-      "source": "/(.*)",
+      "source": "/contact",
       "destination": "/index.html"
     }
   ]

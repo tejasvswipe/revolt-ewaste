@@ -103,8 +103,27 @@ export default function Home() {
     <section id="evidence" className="relative border-b-2 border-[#101313] bg-[#101313] py-24 text-[#f3f0e8]"><div className="section-rail section-rail-dark">03 / EVIDENCE LAYER / SERIAL TRAIL</div><div className="container"><div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr]"><div><div className="eyebrow mb-5 text-[#18d7c1]">03 / Product — the evidence layer</div><h2 className="display text-5xl md:text-7xl">EVERY ASSET<br />LEAVES AN<br /><span className="text-[#18d7c1]">EVIDENCE TRAIL.</span></h2><p className="mt-8 max-w-[390px] text-sm leading-relaxed text-[#c8cbc2]">The physical asset creates the event. The evidence layer preserves the proof.</p></div><div className="border-2 border-[#f3f0e8] bg-[#f3f0e8] text-[#101313] shadow-[10px_10px_0_#e8f05a]"><div className="flex items-center justify-between border-b-2 border-[#101313] px-5 py-4"><span className="flex items-center gap-2 mono text-[10px] font-bold uppercase tracking-[.12em]"><img src={mark} alt="" className="h-4 w-4 object-contain" /> Asset timeline / simulated</span><span className="flex items-center gap-2 mono text-[10px] text-[#149f92]"><Check size={14} /> VERIFIED</span></div><div className="p-6">{["Device identified", "Custody event 01", "Custody event 02", "Erasure verification", "Certificate generated", "Recovery / handoff"].map((event, i) => <div key={event} className="relative flex gap-5 pb-7 last:pb-0"><div className="relative flex w-4 justify-center"><div className={`z-10 mt-1 h-4 w-4 border-2 border-[#101313] ${i < 4 ? "bg-[#18d7c1]" : "bg-[#e8f05a]"}`} />{i < 5 && <div className="absolute top-5 h-full w-[2px] bg-[#101313]" />}</div><div className="flex-1 border-b border-[#101313]/20 pb-4 last:border-0"><div className="flex items-center justify-between gap-4"><h3 className="text-sm font-extrabold uppercase">{event}</h3><span className="mono text-[9px] text-[#149f92]">{i < 4 ? "RECORDED" : "PLANNED"}</span></div><div className="mono mt-2 flex flex-wrap gap-x-5 gap-y-1 text-[9px] uppercase tracking-[.08em] text-[#4f5753]"><span>RV-2026-000184</span><span>2026-08-{12 + i} / 14:2{i}</span><span>REF / EVD-{String(i + 1).padStart(3, "0")}</span></div></div></div>)}</div></div></div></div></section>
 
     <section id="kiosk" className="relative border-b-2 border-[#101313] bg-[#f3f0e8] py-24"><div className="section-rail">04 / PHYSICAL CONTROL POINT / PROTOTYPE</div><div className="container"><div className="grid items-center gap-12 lg:grid-cols-[1.15fr_.85fr]"><div className="order-2 lg:order-1"><div className="overflow-hidden border-2 border-[#101313] bg-[#101313] shadow-[10px_10px_0_#e8f05a]"><img src={kioskVisual} alt="ReVolt AI smart e-waste recycling kiosk" className="h-[360px] w-full object-cover md:h-[480px]" /></div><p className="mono mt-5 text-[10px] font-bold uppercase tracking-[.12em]">Prototype direction / smart kiosk / physical control point</p></div><div className="order-1 lg:order-2"><div className="eyebrow mb-5">04 / Scaling hook</div><h2 className="display text-5xl md:text-7xl">THE<br /><span className="text-[#e8f05a]">SMART</span><br />KIOSK</h2><p className="mt-8 max-w-[420px] text-xl font-bold leading-tight">Physical intake. Digital evidence from second zero.</p><div className="mt-8 space-y-4">{[["DECENTRALIZED INTAKE", "Assets collected at the point of origin."], ["INSTANT IDENTIFICATION", "Device scanned and registered immediately."], ["DIGITAL TWIN", "Every asset receives a digital record."], ["LOWER FRICTION", "A shorter path from drop-off to evidence."]].map(([title, text]) => <div key={title} className="border-t-2 border-[#101313] pt-3"><div className="text-xs font-extrabold uppercase">{title}</div><div className="mt-1 text-sm">{text}</div></div>)}</div></div></div></div></section>
-    <section className="relative border-b-2 border-[#101313] bg-[#f3f0e8] py-24"><div className="section-rail">contact</div><div className="container"><div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr]"><div><div className="eyebrow mb-5 text-[#149f92]"></div><page />
-    <contact></contact></div>.</div><h2 className="display text-5xl md:text-7xl">PHYSICAL<br /><span className="text-[#149f92]">EVENT.</span><br />DIGITAL<br />PROOF.</h2></div><div className="border-2 border-[#101313] bg-[#fffdf7] p-3 shadow-[9px_9px_0_#101313]"><div className="grid-paper relative flex h-[300px] items-center justify-center overflow-hidden bg-[#101313] md:h-[430px]"><div className="absolute left-[12%] top-[22%] h-[46%] w-[42%] skew-y-[-5deg] border-2 border-[#18d7c1] bg-[#202b28] shadow-[8px_8px_0_#18d7c1]"><div className="absolute inset-[10%] border border-[#f3f0e8]/30" /><div className="absolute bottom-[-10px] left-[18%] h-2 w-[64%] bg-[#f3f0e8]" /></div><div className="absolute right-[10%] top-[16%] w-[38%] border-2 border-[#f3f0e8] bg-[#f3f0e8] p-4 text-[#101313] shadow-[7px_7px_0_#e8f05a]"><div className="mono text-[9px] text-[#149f92]">DIGITAL TWIN / SIMULATED</div><div className="mt-7 space-y-3">{["IDENTITY", "CUSTODY", "ERASURE", "CERTIFICATE"].map((row, i) => <div key={row} className="flex justify-between border-b border-[#101313]/20 pb-2 text-[9px
+    <section className="relative border-b-2 border-[#101313] bg-[#f3f0e8] py-24"><div className="section-rail">contact</div><div className="container"><div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr]"><div><div className="eyebrow mb-5 text-[#149f92]"></div>
+   <div className="mt-8 flex flex-wrap gap-4">
+  <CTA onClick={pilot}>Request a pilot</CTA>
+
+  <Link
+    href="/contact"
+    className="brutal-cta inline-flex items-center gap-3 border-2 border-[#18d7c1] bg-transparent px-5 py-3 text-[13px] font-bold uppercase tracking-[.08em] text-[#f3f0e8] shadow-[6px_6px_0_#18d7c1]"
+  >
+    Contact Us
+    <ArrowRight size={16} className="text-[#18d7c1]" />
+  </Link>
+
+  <button
+    onClick={() => scrollTo("workflow")}
+    className="pressable inline-flex items-center gap-2 border-b-2 border-[#18d7c1] pb-2 text-[13px] font-bold uppercase tracking-[.08em] text-[#f3f0e8]"
+  >
+    See how it works
+    <ArrowDownRight size={16} className="text-[#18d7c1]" />
+  </button>
+</div>
+ 
     <section className="relative border-b-2 border-[#101313] bg-[#f3f0e8] py-24"><div className="section-rail">05 / DIGITAL TWIN / RECORD LINK</div><div className="container"><div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr]"><div><div className="eyebrow mb-5 text-[#149f92]">05 / One device. One record.</div><h2 className="display text-5xl md:text-7xl">PHYSICAL<br /><span className="text-[#149f92]">EVENT.</span><br />DIGITAL<br />PROOF.</h2></div><div className="border-2 border-[#101313] bg-[#fffdf7] p-3 shadow-[9px_9px_0_#101313]"><div className="grid-paper relative flex h-[300px] items-center justify-center overflow-hidden bg-[#101313] md:h-[430px]"><div className="absolute left-[12%] top-[22%] h-[46%] w-[42%] skew-y-[-5deg] border-2 border-[#18d7c1] bg-[#202b28] shadow-[8px_8px_0_#18d7c1]"><div className="absolute inset-[10%] border border-[#f3f0e8]/30" /><div className="absolute bottom-[-10px] left-[18%] h-2 w-[64%] bg-[#f3f0e8]" /></div><div className="absolute right-[10%] top-[16%] w-[38%] border-2 border-[#f3f0e8] bg-[#f3f0e8] p-4 text-[#101313] shadow-[7px_7px_0_#e8f05a]"><div className="mono text-[9px] text-[#149f92]">DIGITAL TWIN / SIMULATED</div><div className="mt-7 space-y-3">{["IDENTITY", "CUSTODY", "ERASURE", "CERTIFICATE"].map((row, i) => <div key={row} className="flex justify-between border-b border-[#101313]/20 pb-2 text-[9px] font-bold"><span>{row}</span><span className="text-[#149f92]">{i < 3 ? "LINKED" : "PLANNED"}</span></div>)}</div></div><div className="absolute bottom-5 left-5 mono text-[9px] uppercase tracking-[.12em] text-[#18d7c1]">RV-2026-000184 / RECORD LINKED</div></div><div className="grid grid-cols-2 gap-0 border-t-2 border-[#101313] md:grid-cols-5">{["Identity", "Custody", "Erasure", "Certificate", "Recovery"].map((label, i) => <div key={label} className="border-r border-[#101313] p-3 last:border-0"><div className="mono text-[9px] text-[#149f92]">0{i + 1}</div><div className="mt-4 text-[10px] font-extrabold uppercase">{label}</div></div>)}</div></div></div></div></section>
 
     <section className="relative border-b-2 border-[#101313] bg-[#f3f0e8] py-24"><div className="section-rail">06 / AI ASSIST / AUTOMATION LAYER</div><div className="container"><div className="grid gap-12 lg:grid-cols-[.65fr_1.35fr]"><div><div className="eyebrow mb-5">06 / AI in the workflow</div><h2 className="display text-5xl md:text-7xl">AI MAKES<br />PHYSICAL<br /><span className="text-[#149f92]">EVIDENCE</span><br />STRUCTURED.</h2></div><div><p className="max-w-[620px] text-2xl font-extrabold leading-tight">Not hype. A practical automation layer for device identity, erasure verification, records, and evidence generation.</p><div className="mt-10 grid gap-3 sm:grid-cols-2">{["Device identification automation", "Compliance automation foundation", "AI-assisted erasure verification", "Structured asset records", "Evidence generation", "Workflow automation"].map((item, i) => <div key={item} className="flex items-center gap-4 border-2 border-[#101313] bg-[#f3f0e8] p-4 shadow-[4px_4px_0_#101313]"><span className="mono text-xs font-bold text-[#149f92]">0{i + 1}</span><span className="text-sm font-bold uppercase">{item}</span></div>)}</div></div></div></div></section>
@@ -115,7 +134,40 @@ export default function Home() {
 
     <EvidenceVault />
 
-    <footer className="bg-[#101313] py-10 text-[#f3f0e8]"><div className="container flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><div className="flex items-center gap-3"><img src={mark} alt="" className="h-8 w-8 object-contain" /><span className="text-lg font-extrabold tracking-[-.06em]">ReVolt<span className="text-[#18d7c1]">.async function name(params:type) {
+<footer className="bg-[#101313] py-10 text-[#f3f0e8]">
+  <div className="container flex flex-col justify-between gap-8 md:flex-row md:items-end">
+    <div>
+      <div className="flex items-center gap-3">
+        <img
+          src={mark}
+          alt="ReVolt AI logo"
+          className="h-8 w-8 object-contain"
+        />
+        <span className="text-lg font-extrabold tracking-[-.06em]">
+          ReVolt<span className="text-[#18d7c1]">.ai</span>
+        </span>
+      </div>
+      <p className="mono mt-4 max-w-xs text-[10px] uppercase tracking-[.12em] text-[#8d938d]">
+        Evidence infrastructure for retired devices.
+      </p>
+    </div>
+
+    <div className="flex flex-wrap items-center gap-5">
+      <Link
+        href="/contact"
+        className="brutal-chip"
+      >
+        Contact Us
+      </Link>
+      <button
+        onClick={() => scrollTo("top")}
+        className="pressable nav-index mono text-[10px] font-bold uppercase tracking-[.12em] text-[#18d7c1]"
+      >
+        Back to top ↑
+      </button>
+    </div>
+  </div>
+</footer>
       
     }</span></span></div><p className="mt-4 max-w-[360px] text-xs leading-relaxed text-[#8d938d]">The evidence layer for e-waste. Secure collection, verified erasure, serialized proof.</p></div><div className="flex flex-col items-start gap-3 md:items-end"><Link href="/contact" className="text-xs font-bold uppercase tracking-[.1em] text-[#18d7c1] hover:underline">Contact us <ArrowRight className="ml-1 inline" size={13} /></Link><div className="mono text-[10px] uppercase tracking-[.12em] text-[#8d938d]">Prototype / Pilot phase / Source-grounded</div></div></div></footer>
   </main>;

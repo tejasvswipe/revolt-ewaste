@@ -151,19 +151,19 @@ export default function Home() {
         Evidence infrastructure for retired devices.
       </p>
     </div>
+  {<div className="flex flex-wrap items-center gap-5">
+          <Link href="/contact" className="brutal-chip">
+            Contact Us
+          </Link>
 
-    <div className="flex flex-wrap items-center gap-5">
-      <Link
-        href="/contact"
-        className="brutal-chip"
-      >
-        Contact Us
-      </Link>
-      <button
-        onClick={() => scrollTo("top")}
-        className="pressable nav-index mono text-[10px] font-bold uppercase tracking-[.12em] text-[#18d7c1]"
-      >
-        Back to top ↑
-      </button>
-    </div>
-</footer>
+          <button
+            onClick={() => scrollTo("top")}
+            className="pressable nav-index mono text-[10px] font-bold uppercase tracking-[.12em] text-[#18d7c1]"
+          >
+            Back to top ↑
+          </button>
+        </div>
+      </div>
+    </footer>
+  </main>;
+}

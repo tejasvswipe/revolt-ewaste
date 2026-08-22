@@ -72,8 +72,8 @@ export default function Contact() {
             CONTACT / INQUIRY FORM
           </div>
 
-          <h1 className="display max-w-[900px] text-[clamp(58px,11vw,150px)] leading-[.83]">
-            FOUNDER
+          <h1 className="display max-w-[830px] text-[clamp(58px,11vw,150px)] leading-[.83]">
+            ReVolt present's 
             <br />
             <span className="font-serif font-normal italic text-[#18d7c1]">
               Tejasv Sahu
@@ -84,7 +84,7 @@ export default function Contact() {
             ReVolt AI
           </h1>
 
-          <div className="mt-12 grid max-w-[760px] gap-8 md:grid-cols-[1fr_.7fr] md:items-end">
+          <div className="mt-12 grid max-w-[460px] gap-8 md:grid-cols-[1fr_.7fr] md:items-end">
             <p className="text-2xl font-extrabold uppercase leading-tight">
               Tejasv Sahu is building ReVolt AI, an AI-enabled IT asset
               disposition platform focused on making retired enterprise

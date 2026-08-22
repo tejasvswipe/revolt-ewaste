@@ -28,7 +28,10 @@ export const appRouter = router({
         phone: z.string().trim().min(7).max(60),
         message: z.string().trim().min(10).max(5000),
       }))
-      .mutation(({ input }) => insertContactInquiry(input)),
+      .mutation(async ({ input }) => {
+        await insertContactInquiry(input);
+        return { success: true as const };
+      }),
   }),
   evidenceFiles: router({
     list: protectedProcedure.query(({ ctx }) => listEvidenceFiles(ctx.user.id)),

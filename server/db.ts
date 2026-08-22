@@ -13,9 +13,19 @@ function headers(prefer?: string) {
   };
 }
 
+export function supabaseErrorMessage(path: string, status: number) {
+  if (status === 404 && path.startsWith("/contact_inquiries")) {
+    return "Contact storage is not initialized. Run supabase/schema.sql in the Supabase SQL Editor, then try again.";
+  }
+  if (status === 404 && path.startsWith("/evidence_files")) {
+    return "Evidence storage is not initialized. Run supabase/schema.sql in the Supabase SQL Editor, then try again.";
+  }
+  return `Supabase request failed (${status})`;
+}
+
 async function supabaseRequest<T>(path: string, init: RequestInit = {}) {
   const response = await fetch(`${apiBase()}${path}`, { ...init, headers: { ...headers(), ...(init.headers || {}) } });
-  if (!response.ok) throw new Error(`Supabase request failed (${response.status})`);
+  if (!response.ok) throw new Error(supabaseErrorMessage(path, response.status));
   const text = await response.text();
   return text ? JSON.parse(text) as T : undefined;
 }
@@ -39,7 +49,10 @@ export async function insertContactInquiry(inquiry: InsertContactInquiry) {
     headers: { Prefer: "return=representation" },
     body: JSON.stringify(inquiry),
   });
-  return rows?.[0];
+  return {
+    success: true as const,
+    record: rows?.[0] ?? null,
+  };
 }
 
 export async function insertEvidenceFile(file: InsertEvidenceFile) {

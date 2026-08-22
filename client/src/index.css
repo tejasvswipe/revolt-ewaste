@@ -68,9 +68,18 @@ button:focus-visible, a:focus-visible { outline: 3px solid #18d7c1; outline-offs
   .ink-card { border: 2px solid #101313; box-shadow: 8px 8px 0 #101313; }
   .teal-card { border: 2px solid #101313; box-shadow: 8px 8px 0 #18d7c1; }
   .yellow-card { border: 2px solid #101313; box-shadow: 8px 8px 0 #e8f05a; }
-  .pressable { transition: transform 160ms cubic-bezier(.23,1,.32,1), box-shadow 160ms cubic-bezier(.23,1,.32,1); }
+  .pressable { transition: transform 160ms cubic-bezier(.23,1,.32,1), box-shadow 160ms cubic-bezier(.23,1,.32,1), background-color 160ms ease, color 160ms ease; }
   .pressable:hover { transform: translate(3px, 3px); box-shadow: 4px 4px 0 #101313; }
   .pressable:active { transform: translate(7px, 7px) scale(.985); box-shadow: 1px 1px 0 #101313; }
+  .brutal-chip { border: 2px solid #101313; background: #18d7c1; color: #101313; padding: 8px 12px; font: 800 10px/1 "DM Mono", monospace; letter-spacing: .1em; text-transform: uppercase; box-shadow: 4px 4px 0 #101313; transition: transform 160ms cubic-bezier(.23,1,.32,1), box-shadow 160ms cubic-bezier(.23,1,.32,1), background-color 160ms ease; }
+  .brutal-chip:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #101313; background: #e8f05a; }
+  .brutal-chip:active, .brutal-cta:active { transform: translate(5px, 5px) scale(.985); box-shadow: 1px 1px 0 #101313; }
+  .brutal-cta { border: 2px solid #101313; transition: transform 160ms cubic-bezier(.23,1,.32,1), box-shadow 160ms cubic-bezier(.23,1,.32,1), background-color 160ms ease, color 160ms ease; }
+  .brutal-cta:hover { transform: translate(3px, 3px); box-shadow: 3px 3px 0 #18d7c1; background: #18d7c1; color: #101313; }
+  .brutal-chip:focus-visible, .brutal-cta:focus-visible { outline: 3px solid #18d7c1; outline-offset: 4px; }
+  .nav-index { box-shadow: none; padding: 4px 0; }
+  .nav-index:hover { transform: translateY(-1px); box-shadow: none; }
+  .nav-index:active { transform: translateY(1px) scale(.98); box-shadow: none; }
   .grid-paper { background-image: linear-gradient(rgba(16,19,19,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(16,19,19,.08) 1px, transparent 1px); background-size: 32px 32px; }
   .noise { position: relative; }
   .noise::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .12; mix-blend-mode: multiply; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.23'/%3E%3C/svg%3E"); }

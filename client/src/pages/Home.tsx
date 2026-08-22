@@ -166,5 +166,4 @@ export default function Home() {
         Back to top ↑
       </button>
     </div>
-  </div>
 </footer>

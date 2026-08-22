@@ -168,7 +168,3 @@ export default function Home() {
     </div>
   </div>
 </footer>
-      
-    }</span></span></div><p className="mt-4 max-w-[360px] text-xs leading-relaxed text-[#8d938d]">The evidence layer for e-waste. Secure collection, verified erasure, serialized proof.</p></div><div className="flex flex-col items-start gap-3 md:items-end"><Link href="/contact" className="text-xs font-bold uppercase tracking-[.1em] text-[#18d7c1] hover:underline">Contact us <ArrowRight className="ml-1 inline" size={13} /></Link><div className="mono text-[10px] uppercase tracking-[.12em] text-[#8d938d]">Prototype / Pilot phase / Source-grounded</div></div></div></footer>
-  </main>;
-}

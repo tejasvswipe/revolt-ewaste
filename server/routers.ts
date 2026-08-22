@@ -3,7 +3,7 @@ import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
-import { insertContactInquiry, insertEvidenceFile, listEvidenceFiles } from "./db";
+import { insertContactInquiry, insertEvidenceFile, listEvidenceFiles } from "./db.js";
 import { storagePut } from "./storage";
 
 const safeFileName = (name: string) => name.replace(/[^a-zA-Z0-9._-]/g, "_").slice(0, 180) || "evidence-file";

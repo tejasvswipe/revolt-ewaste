@@ -1,0 +1,14 @@
+{
+  "build_command": "npm run build",
+  "dev_command": "npm run dev",
+  "test_command": "npm test",
+  "capabilities": ["db", "server", "user"],
+  "template_id": "web-db-user",
+  "name": "revolt-ai-site",
+  "port": 3000,
+  "env_vars": {
+    "SUPABASE_URL": "https://YOUR_PROJECT_REF.supabase.co",
+    "SUPABASE_TOKEN": "SET_IN_VERCEL_SERVER_ENVIRONMENT_ONLY",
+    "VITE_APP_TITLE": "ReVolt AI — The Evidence Layer for E-Waste"
+  }
+}
